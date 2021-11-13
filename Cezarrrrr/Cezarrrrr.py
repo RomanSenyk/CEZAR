@@ -1,6 +1,6 @@
 # Cesar encryption algorithm. Changes for test new Git tool.
 alpha = 'abcdefghijklmnopqrstuvwxyz'
-key = int(input('Key:'))
+key = int(1)
 str1 = input()
 res = ''
 
@@ -12,4 +12,5 @@ for i in str1:
     res += alpha[(alpha.find(i) + key) % len(alpha)]
     
 print('Result: "' + res + '"')
+
 
